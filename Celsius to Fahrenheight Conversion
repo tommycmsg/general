@@ -2,6 +2,9 @@
 # Tf = Tc x 9/5 + 32
 
 temp = raw_input('Enter Temperature in Celsius:')
-temp_c = float(temp)
-temp_f = temp_c * 9 / 5 + 32
-print 'Fahrenheight Temp',temp_f
+try:
+  temp_c = float(temp)
+  temp_f = temp_c * 9 / 5 + 32
+  print 'Fahrenheight Temp',temp_f
+except:
+  print 'Please Enter a Number'
